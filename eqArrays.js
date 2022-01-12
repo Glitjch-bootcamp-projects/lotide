@@ -9,6 +9,6 @@ const eqArrays = function(arr1, arr2) {
   arr1.join("") === arr2.join("") ? checkEqArr = true : checkEqArr = false;
   return checkEqArr;
 };
-
+l
 // Am I doing something wrong? This solution, converting entire arrays into strings, seems too good to be true...
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
