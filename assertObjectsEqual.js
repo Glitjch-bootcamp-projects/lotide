@@ -1,5 +1,3 @@
-const { read } = require('fs');
-
 // eqArrays
 const eqArrays = function(arr1, arr2) {
   let maxLength = Math.max(arr1.length, arr2.length);
@@ -11,7 +9,7 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-// Test eqObjects 
+// Test eqObjects
 const eqObjects = function(obj1, obj2) {
   
   //if the quantity of keys are different...
@@ -30,38 +28,38 @@ const eqObjects = function(obj1, obj2) {
   }
   
   return true;
-}
+};
 
 
 
 // New code for asserting two compared objects
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
-  eqObjects(actual, expected) 
-  ? console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`)
-  : console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`)
+  eqObjects(actual, expected)
+    ? console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`)
+    : console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
 };
 
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-const ef = { 
+const ef = {
   e: [
-    "4", 
-    5, 
-    apple = {
+    "4",
+    5,
+    {
       color: "red",
       shape: "round",
       taste: "delcious"
     }
-  ], 
+  ],
   f: "5"
 };
 const fe =  {
   f: "5",
   e: [
-    "4", 
-    5, 
-    apple = {
+    "4",
+    5,
+    {
       color: "red",
       shape: "round",
       taste: "delcious"
@@ -71,6 +69,6 @@ const fe =  {
 
 
 
-// Test cases 
-assertObjectsEqual(cd, dc)
-assertObjectsEqual(ef, fe)
+// Test cases
+assertObjectsEqual(cd, dc);
+assertObjectsEqual(ef, fe);
