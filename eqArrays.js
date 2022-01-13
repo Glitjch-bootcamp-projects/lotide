@@ -14,5 +14,4 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-//Am I doing something wrong? This solution, converting entire arrays into strings, seems too good to be true...
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
