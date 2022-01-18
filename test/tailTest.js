@@ -1,7 +1,13 @@
-const assertEqual = require('../assertEqual');
-const eqArrays = require('../eqArrays');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
+describe("#tail", () => {
+  
+  it('returns ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]', () => {
+    const input = ["Hello", "Lighthouse", "Labs"];
+    const expected = ["Lighthouse", "Labs"];
+    assert.deepEqual(tail(input), expected);
+  });
 
-assertEqual(eqArrays(result, ["Lighthouse", "Labs"]), true)
+
+});
