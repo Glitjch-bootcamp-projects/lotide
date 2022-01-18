@@ -14,7 +14,7 @@ const assertEqual = require('./assertEqual');
 const assertArraysEqual = require('./assertArraysEqual');
 
 module.exports = {
-  head: head,
+  head,
   tail,
   middle,
   map,

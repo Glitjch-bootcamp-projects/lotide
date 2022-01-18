@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@glitjch/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "prototype utility functions library, inspired by Lodash, commissioned by Lighthouse Labs (not really commissioned, but it sounds cool to say)",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/glitjch/lotide.git"
   },
-  "author": "",
+  "author": "TJ Phan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/glitjch/lotide/issues"
